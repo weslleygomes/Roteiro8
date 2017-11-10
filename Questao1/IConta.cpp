@@ -2,10 +2,10 @@
 
 Iconta::Iconta()
 {
-    //ctor
 }
 
 Iconta::~Iconta()
 {
-    //dtor
 }
+
+

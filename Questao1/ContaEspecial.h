@@ -5,13 +5,10 @@
 class ContaEspecial : public Conta
 {
     public:
-        ContaEspecial(string nomeCliente, double salarioMensal, string numeroDaConta, double saldo);
+        ContaEspecial(std::string nomeCliente, double salarioMensal, std::string numeroDaConta, double saldo);
         virtual ~ContaEspecial();
         void definirLimite();
-
-    protected:
-
-    private:
+        double getLimite();
 };
 
 #endif

@@ -2,27 +2,26 @@
 #define CONTA_H
 #include "Iconta.h"
 #include <string>
-using namespace std;
 
 class Conta : public Iconta
 {
     public:
-        Conta(string nomeCliente, double salarioMensal, string numeroDaConta, double saldo);
+        Conta(std::string nomeCliente, double salarioMensal, std::string numeroDaConta, double saldo);
         virtual ~Conta();
         void sacar(double valor);
         void depositar(double valor);
         void definirLimite();
-        string getNomeCliente();
+        std::string getNomeCliente();
         double getSalarioMensal();
-        string getNumeroDaConta();
+        std::string getNumeroDaConta();
         double getSaldo();
+        double getLimite();
     protected:
-        string nomeCliente;
+        std::string nomeCliente;
         double salarioMensal;
-        string numeroDaConta;
+        std::string numeroDaConta;
         double saldo;
         double limite;
-    private:
 };
 
-#endif // CONTA_H
+#endif
